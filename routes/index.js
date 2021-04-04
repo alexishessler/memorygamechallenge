@@ -27,7 +27,9 @@ router.post('/save', async (req, res) => {
 router.get('/besttimes', async (req, res) => {
   try {
 
-    const times = await TimeModel.find().sort({'timeScore': -1})
+    const times = await TimeModel.find().sort({'timeScore': 1})
+
+    console.log(times)
   
     res.json({result: true, bestimes: {
       time1: times[0].timeScore,
