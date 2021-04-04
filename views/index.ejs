@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+      <h1>Memory Game</h1>
+
+      <div id="navcontainer">
+        <div id="leftcol">
+          <input id="start" type="button" value="Jouer"/>
+          <p id="difficultelabel">Difficulté</p>
+          <select id="difficulty">
+            <option value="easy">Poisson Rouge</option>
+            <option value="hard">Hypermnésie</option>
+          </select>
+        </div>
+        <div id="rightcol">
+          <p>BEST SCORES : 1ER=[<span id="score1">...</span>sc] 2EM=[<span id="score2">...</span>sc] 3EM=[<span id="score3">...</span>sc] </p>
+        </div>
+        
+      </div>
+
+
+
+    <div id="cardcontainer">
+    </div>
+
+    <div id="timebar">
+      <div id="time"></div>
+    </div>
+
+    <script src="/javascripts/fruits.js"></script>
+    <script src="/javascripts/memory.js"></script>
+  </body>
+</html>
