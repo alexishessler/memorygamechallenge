@@ -1,0 +1,16 @@
+const fruitsArray = [
+    "abricot",
+    "banane",
+    "cerise",
+    "clementine",
+    "fraise",
+    "framboise",
+    "grenade",
+    "mure",
+    "pamplemousse",
+    "pasteque",
+    "peche",
+    "prune",
+    "raisin",
+    "tomate",
+]

@@ -1,0 +1,96 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1592079927431-3f8ced0dacc6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px #2b2929; }
+
+h1 {
+  text-align: center; }
+
+#navcontainer {
+  display: flex;
+  margin-bottom: 20px; }
+  @media (max-width: 1024px) {
+    #navcontainer {
+      flex-direction: column;
+      align-items: center; } }
+  #navcontainer #leftcol {
+    display: flex;
+    justify-content: center;
+    width: 50%; }
+    #navcontainer #leftcol #difficultelabel {
+      margin-left: 50px;
+      font-weight: bold; }
+    #navcontainer #leftcol select {
+      margin-left: 10px;
+      border: 1px solid #EEEEEE;
+      border-radius: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      cursor: pointer;
+      background-color: #EEEEEE; }
+    #navcontainer #leftcol input {
+      border: 1px solid #EEEEEE;
+      border-radius: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      background-color: #EEEEEE; }
+  #navcontainer #rightcol {
+    display: flex;
+    justify-content: center;
+    width: 50%; }
+
+#cardcontainer {
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  #cardcontainer .card {
+    margin: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-color: #0ddf99;
+    opacity: 0.9;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 6px 8px 1px rgba(189, 189, 189, 0.69);
+    -webkit-box-shadow: 0px 6px 8px 1px rgba(189, 189, 189, 0.69);
+    -moz-box-shadow: 0px 6px 8px 1px rgba(189, 189, 189, 0.69); }
+    @media (min-width: 1025px) {
+      #cardcontainer .card {
+        width: 12%;
+        height: 150px; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      #cardcontainer .card {
+        width: 15%;
+        height: 90px; } }
+    @media (max-width: 767px) {
+      #cardcontainer .card {
+        width: 20%;
+        height: 70px; } }
+
+#timebar {
+  position: fixed;
+  margin-top: 0px;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  border: 2px solid #0ddf99;
+  background-color: #EEEEEE;
+  box-shadow: -1px -3px 7px 0px rgba(189, 189, 189, 0.69);
+  -webkit-box-shadow: -1px -3px 7px 0px rgba(189, 189, 189, 0.69);
+  -moz-box-shadow: -1px -3px 7px 0px rgba(189, 189, 189, 0.69); }
+  #timebar #time {
+    background-color: #dd2323;
+    height: 100%;
+    width: 0%; }
+
+/*# sourceMappingURL=style.css.map */
