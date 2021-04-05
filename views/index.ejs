@@ -18,6 +18,7 @@
             <option value="hard">Hypermnésie</option>
           </select>
         </div>
+        <!-- Ici, les 3 span verront leur contenu textuel modifié par la fonction getBestTimes() dans notre fichier memory.js -->
         <div id="rightcol">
           <p>BEST SCORES : 1ER=[<span id="score1">...</span>sc] 2EM=[<span id="score2">...</span>sc] 3EM=[<span id="score3">...</span>sc] </p>
         </div>
@@ -25,14 +26,16 @@
       </div>
 
 
-
+    <!-- Ici, jQuery va créer puis mélanger les cartes -->
     <div id="cardcontainer">
     </div>
 
+    <!-- Ici, la <div> time verra sa width être incrémentée par le timer qui se décrémente par la fonction launchTimer() dans notre fichier memory.js  -->
     <div id="timebar">
       <div id="time"></div>
     </div>
 
+    <!-- Ici, les scripts sont convoqués -->
     <script src="/javascripts/fruits.js"></script>
     <script src="/javascripts/memory.js"></script>
   </body>

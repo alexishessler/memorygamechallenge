@@ -11,8 +11,11 @@ router.get('/', function(req, res, next) {
 router.post('/save', async (req, res) => {
   try {
     
+    // Destructuration de la clef time dans l'objet body 
     const { time } = req.body;
 
+    // Utilisation de l'opérateur new pour créer une instance de l'objet TimeModel
+    // Cet objet doit respecter un schéma de données créé dans le fichier /models/timeModel.js
     const saveNewTime = new TimeModel({timeScore:time})
     await saveNewTime.save()
   
